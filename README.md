@@ -2,8 +2,7 @@
 
 
 # PyNetScanner
-Simple Python MAC Address Changer
-
+### Simple Python Network Scanner
 ## Get Program : 
 
 git clone https://github.com/margoul1Malin/PyNetScanner.git
