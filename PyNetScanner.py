@@ -1,15 +1,15 @@
 import scapy.all as scapy
-import re, optparse, sys, os, ipaddress
+import re, argparse, sys, os, ipaddress
 
 #SCAPY WHO_HAS PACKET
 #BROADCAST ADRESS
 #SEND = srp()
 
-parser = optparse.OptionParser()
-parser.add_option('-i', '--ip', dest="ip", help="Type the IP u want to scan")
-parser.add_option('-a', '--aggressive', dest="aggressive", help="Scanning deeper and take more time")
-parser.add_option('-o', '--output', dest="output", help="Output IP Addresses & MAC Addresses in a file")
-(options, arguments) = parser.parse_args()
+parser = argparse.OptionParser()
+parser.add_argument('-i', '--ip', dest="ip", help="Type the IP u want to scan")
+parser.add_argument('-a', '--aggressive', dest="aggressive", help="Scanning deeper and take more time")
+parser.add_argument('-o', '--output', dest="output", help="Output IP Addresses & MAC Addresses in a file")
+options  = parser.parse_args()
 
 tablist = []
 dico = {}
