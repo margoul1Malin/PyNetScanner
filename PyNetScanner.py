@@ -5,7 +5,7 @@ import re, argparse, sys, os, ipaddress
 #BROADCAST ADRESS
 #SEND = srp()
 
-parser = argparse.OptionParser()
+parser = argparse.ArgumentParser()
 parser.add_argument('-i', '--ip', dest="ip", help="Type the IP u want to scan")
 parser.add_argument('-a', '--aggressive', dest="aggressive", help="Scanning deeper and take more time")
 parser.add_argument('-o', '--output', dest="output", help="Output IP Addresses & MAC Addresses in a file")
